@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kerala Tigers – Contact & Fan Club</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="brand-logo">
+            <img src="assets/logo.png" alt="Kerala Tigers Logo" />
+          </div>
+          <span>KERALA TIGERS</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="fixtures.html">Fixtures</a>
+          <a href="squad.html">Squad</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="nav-cta">Roar Together</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="hero-tag">
+            <div class="hero-tag-dot"></div>
+            <span>Stay Connected</span>
+          </div>
+          <h1>
+            <span class="hero-title-highlight">Contact</span><br />
+            Join the Kerala Tigers Family
+          </h1>
+          <p>
+            Whether you’re a fan, sponsor, academy player or media partner, we’d
+            love to hear from you. Reach out and be part of the roar.
+          </p>
+          <div class="hero-actions">
+            <a href="#fanclub" class="btn-primary">Join Fan Club</a>
+            <a href="#details" class="btn-secondary">Club Details</a>
+          </div>
+        </div>
+        <aside class="hero-logo-card">
+          <img src="assets/logo.png" alt="Kerala Tigers Crest" />
+          <h2>Roar With Us</h2>
+          <p>Every message, every cheer and every fan matters.</p>
+        </aside>
+      </section>
+
+      <section id="details">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-title">
+              <span>//</span> Club Contacts
+            </div>
+            <div class="section-subtitle">
+              Official channels for enquiries and collaboration.
+            </div>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Management Office</h3>
+              <p>
+                For sponsorships, fixtures, academy admissions or media
+                enquiries, contact the Kerala Tigers management using the
+                details below.
+              </p>
+              <div class="contact-row">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:info@keralatigers.com">info@keralatigers.com</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">
+                  +91-00000-00000
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-label">Location</div>
+                <div class="contact-value">
+                  Kerala, India
+                </div>
+              </div>
+            </div>
+            <div class="contact-card" id="fanclub">
+              <h3>Fan Club Sign-Up</h3>
+              <p>
+                Fill out the form below to express interest in the Kerala Tigers
+                Fan Club. To collect real responses, you can later connect this
+                form to a service like Google Forms or Netlify Forms.
+              </p>
+              <form class="contact-form">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="Your full name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="you@example.com" />
+                </div>
+                <div class="field">
+                  <label for="message">Message / Interest</label>
+                  <textarea id="message" rows="3" placeholder="Tell us how you want to support the Tigers..."></textarea>
+                </div>
+                <button type="button">Submit (Demo Only)</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© <span id="year">2025</span> <strong>Kerala Tigers</strong>. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="fixtures.html">Fixtures</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var el = document.getElementById("year");
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
