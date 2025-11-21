@@ -3,154 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <title>Kerala Tigers – Squad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div class="page-wrapper">
-   <header>
-  <div class="nav">
-    <div class="brand">
-      <div class="brand-logo">
-        <img src="assets/logo.png" alt="Kerala Tigers Logo" />
+    <header>
+      <div class="container nav-bar">
+        <div class="brand">
+          <div class="brand-logo">
+            <img src="assets/logo.png" alt="Kerala Tigers logo" />
+          </div>
+          <div class="brand-name">
+            <span>Official Club</span>
+            <span>Kerala Tigers</span>
+          </div>
+        </div>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="fixtures.html">Fixtures</a>
+          <a href="squad.html" class="active">Squad</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-      <span>KERALA TIGERS</span>
-    </div>
-
-    <!-- MOBILE MENU BUTTON -->
-    <button class="hamburger" onclick="toggleMenu()">
-      ☰
-    </button>
-
-    <!-- NAV LINKS -->
-    <nav class="nav-links" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="fixtures.html">Fixtures</a>
-      <a href="squad.html">Squad</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
+    </header>
 
     <main>
       <section class="hero">
-        <div>
-          <div class="hero-tag">
-            <div class="hero-tag-dot"></div>
-            <span>The Pride</span>
+        <div class="container hero-grid">
+          <div>
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              <span>The Pride</span>
+            </div>
+            <h1 class="hero-title">
+              <span>Squad</span><br />
+              The Tigers on the Pitch
+            </h1>
+            <p class="hero-subtitle">
+              From commanding leaders to explosive finishers and rock-solid
+              defenders, this is the group that carries the Kerala Tigers badge
+              into every battle.
+            </p>
+            <div class="hero-actions">
+              <a href="fixtures.html" class="btn btn-primary">See Them in Action</a>
+              <a href="contact.html" class="btn btn-secondary">Fan Messages</a>
+            </div>
           </div>
-          <h1>
-            <span class="hero-title-highlight">Squad</span><br />
-            The Tigers on the Field
-          </h1>
-          <p>
-            From commanding captains to fearless finishers and rock-solid
-            defenders, meet the players who carry the Kerala Tigers badge with
-            pride.
-          </p>
-          <div class="hero-actions">
-            <a href="fixtures.html" class="btn-primary">See Them in Action</a>
-            <a href="contact.html" class="btn-secondary">Join the Fan Club</a>
-          </div>
+          <aside class="hero-card">
+            <img src="assets/logo.png" alt="Kerala Tigers crest" />
+            <h2>United as One</h2>
+            <p>Different roles. One roar.</p>
+          </aside>
         </div>
-        <aside class="hero-logo-card">
-          <img src="assets/logo.png" alt="Kerala Tigers Crest" />
-          <h2>United as One</h2>
-          <p>Every player different, every Tiger driven by the same roar.</p>
-        </aside>
       </section>
 
-      <section>
-        <div class="section-inner">
+      <section class="section">
+        <div class="container">
           <div class="section-header">
-            <div class="section-title">
-              <span>//</span> Leadership Group
-            </div>
-            <div class="section-subtitle">
-              Captains who guide the game and the locker room.
-            </div>
+            <div class="section-kicker"><span>//</span> Leadership Group</div>
+            <h2 class="section-title">Guiding the Tigers on and off the field.</h2>
           </div>
-          <div class="card-row">
-            <article class="simple-card">
-              <div class="badge badge-primary">Captain</div>
+          <div class="card-grid card-grid--three">
+            <article class="card">
+              <span class="card-label card-label--primary">Captain</span>
               <h3>Player Name #10</h3>
               <p>
-                Creative leader with vision, composure and the ability to unlock
-                tight defenses when it matters most.
+                Creative leader with vision and composure, capable of changing a
+                match with one decisive moment.
               </p>
-              <div class="simple-meta">
-                Role: Playmaker / Attacking Midfield
-              </div>
+              <div class="card-meta">Role: Playmaker / Attacking Midfield</div>
             </article>
-            <article class="simple-card">
-              <div class="badge">Vice-Captain</div>
+            <article class="card">
+              <span class="card-label">Vice-Captain</span>
               <h3>Player Name #5</h3>
               <p>
-                Defensive rock who organizes the back line, wins aerial duels
-                and inspires the team with fearless tackles.
+                Defensive general organising the back line, winning duels and
+                keeping standards high.
               </p>
-              <div class="simple-meta">
-                Role: Centre-back / Defensive Leader
-              </div>
+              <div class="card-meta">Role: Centre-back / Defensive Leader</div>
             </article>
-            <article class="simple-card">
-              <div class="badge">Goalkeeper</div>
+            <article class="card">
+              <span class="card-label">Guardian</span>
               <h3>Player Name #1</h3>
               <p>
-                Commanding presence between the posts, excellent reflexes and a
-                strong voice directing the defense.
+                Commanding goalkeeper with sharp reflexes and a strong voice in
+                organising the defence.
               </p>
-              <div class="simple-meta">
-                Role: Sweeper Keeper
-              </div>
+              <div class="card-meta">Role: Sweeper Keeper</div>
             </article>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="section-inner">
+      <section class="section">
+        <div class="container">
           <div class="section-header">
-            <div class="section-title">
-              <span>//</span> Squad Units
-            </div>
-            <div class="section-subtitle">
-              Balanced lines across the pitch.
-            </div>
+            <div class="section-kicker"><span>//</span> Squad Units</div>
+            <h2 class="section-title">A balanced team front to back.</h2>
           </div>
-          <div class="card-row">
-            <article class="simple-card">
-              <div class="badge badge-primary">Attack</div>
+          <div class="card-grid card-grid--three">
+            <article class="card">
+              <span class="card-label card-label--primary">Attack</span>
               <h3>Forwards &amp; Wingers</h3>
               <p>
-                Fast, technical and ruthless in the final third. Our attackers
-                are trained to press high and finish clinically.
+                Fast, technical and ruthless in front of goal. Press high, run
+                in behind and keep defenders under pressure.
               </p>
-              <div class="simple-meta">
-                Example profiles: Striker, Winger, Inside Forward.
+              <div class="card-meta">
+                Profiles: Central striker, inside forwards, wide wingers.
               </div>
             </article>
-            <article class="simple-card">
-              <div class="badge">Midfield</div>
+            <article class="card">
+              <span class="card-label">Midfield</span>
               <h3>Engine Room</h3>
               <p>
-                The link between defense and attack, controlling tempo,
-                distribution and transitions throughout the game.
+                Dictating tempo, linking defence and attack, and winning second
+                balls all over the pitch.
               </p>
-              <div class="simple-meta">
-                Example profiles: Playmaker, Box-to-Box, DM.
+              <div class="card-meta">
+                Profiles: Deep-lying playmaker, box-to-box, holding mid.
               </div>
             </article>
-            <article class="simple-card">
-              <div class="badge">Defense</div>
-              <h3>Backline &amp; Keeper</h3>
+            <article class="card">
+              <span class="card-label">Defence</span>
+              <h3>Wall of Tigers</h3>
               <p>
-                Compact line that protects our goal, wins duels and builds from
-                the back with calm and precision.
+                Compact line that protects our goal, wins aerial duels and starts
+                attacks with calm distribution.
               </p>
-              <div class="simple-meta">
-                Example profiles: Full-back, Centre-back, GK.
+              <div class="card-meta">
+                Profiles: Full-backs, centre-backs, sweeper keeper.
               </div>
             </article>
           </div>
@@ -159,8 +146,8 @@
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <span>© <span id="year">2025</span> <strong>Kerala Tigers</strong>. All rights reserved.</span>
+      <div class="container footer-inner">
+        <span>© <span id="year">2025</span> Kerala Tigers. All rights reserved.</span>
         <div class="footer-links">
           <a href="index.html">Home</a>
           <a href="fixtures.html">Fixtures</a>
@@ -170,17 +157,9 @@
     </footer>
   </div>
 
+  <script src="assets/app.js"></script>
   <script>
-    (function () {
-      var el = document.getElementById("year");
-      if (el) el.textContent = new Date().getFullYear();
-    })();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("open");
-  }
-</script>
 </body>
 </html>

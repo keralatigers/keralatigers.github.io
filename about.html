@@ -3,146 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <title>Kerala Tigers – About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <div class="page-wrapper">
-<header>
-  <div class="nav">
-    <div class="brand">
-      <div class="brand-logo">
-        <img src="assets/logo.png" alt="Kerala Tigers Logo" />
+    <header>
+      <div class="container nav-bar">
+        <div class="brand">
+          <div class="brand-logo">
+            <img src="assets/logo.png" alt="Kerala Tigers logo" />
+          </div>
+          <div class="brand-name">
+            <span>Official Club</span>
+            <span>Kerala Tigers</span>
+          </div>
+        </div>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="fixtures.html">Fixtures</a>
+          <a href="squad.html">Squad</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-      <span>KERALA TIGERS</span>
-    </div>
-
-    <!-- MOBILE MENU BUTTON -->
-    <button class="hamburger" onclick="toggleMenu()">
-      ☰
-    </button>
-
-    <!-- NAV LINKS -->
-    <nav class="nav-links" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="fixtures.html">Fixtures</a>
-      <a href="squad.html">Squad</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
+    </header>
 
     <main>
       <section class="hero">
-        <div>
-          <div class="hero-tag">
-            <div class="hero-tag-dot"></div>
-            <span>Our Identity</span>
+        <div class="container hero-grid">
+          <div>
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              <span>Our Story</span>
+            </div>
+            <h1 class="hero-title">
+              <span>About</span><br />
+              The Spirit Behind Kerala Tigers
+            </h1>
+            <p class="hero-subtitle">
+              Kerala Tigers was founded to represent the courage, creativity and
+              unity of Kerala on and off the field. Every session and every game
+              is built on three pillars: discipline, respect and relentless work.
+            </p>
+            <div class="hero-actions">
+              <a href="squad.html" class="btn btn-primary">Meet the Squad</a>
+              <a href="fixtures.html" class="btn btn-secondary">See Fixtures</a>
+            </div>
           </div>
-          <h1>
-            <span class="hero-title-highlight">About</span><br />
-            The Spirit of Kerala Tigers
-          </h1>
-          <p>
-            Kerala Tigers is more than a team – it’s a culture built on respect,
-            discipline and an unbreakable bond with our supporters across the
-            state and beyond.
-          </p>
-          <div class="hero-actions">
-            <a href="squad.html" class="btn-primary">Meet the Squad</a>
-            <a href="fixtures.html" class="btn-secondary">See Fixtures</a>
-          </div>
+          <aside class="hero-card">
+            <img src="assets/logo.png" alt="Kerala Tigers crest" />
+            <h2>Born to Compete</h2>
+            <p>Uniting players, coaches and fans into one proud roar.</p>
+          </aside>
         </div>
-        <aside class="hero-logo-card">
-          <img src="assets/logo.png" alt="Kerala Tigers Crest" />
-          <h2>Born to Compete</h2>
-          <p>Uniting players, coaches and fans under one fearless banner.</p>
-        </aside>
       </section>
 
-      <section>
-        <div class="section-inner">
+      <section class="section">
+        <div class="container">
           <div class="section-header">
-            <div class="section-title">
-              <span>//</span> Club Philosophy
-            </div>
-            <div class="section-subtitle">
-              Built on values, sharpened by competition.
-            </div>
+            <div class="section-kicker"><span>//</span> Club Philosophy</div>
+            <h2 class="section-title">Built on values, sharpened by competition.</h2>
           </div>
           <div class="about-grid">
-            <div class="about-card">
-              <h3>Our Story</h3>
+            <div class="about-main">
+              <h3>Our Journey</h3>
               <p>
-                Established in 2025, Kerala Tigers was created to represent the
-                heart of Kerala – fearless, proud and always ready to fight for
-                every inch. Starting as a group of passionate players and
-                coaches, the club quickly grew into a structured program with a
-                clear vision: develop champions on and off the field.
+                Established in 2025, Kerala Tigers is a modern club with a
+                traditional heart. What began as a tight group of passionate
+                players and coaches has grown into a structured program with
+                clear objectives: develop complete athletes, represent Kerala
+                with pride, and inspire the next generation.
               </p>
               <br />
               <p>
-                Every training session is designed around discipline,
-                sportsmanship and tactical intelligence. We believe that the
-                true strength of a team comes from unity, preparation and the
-                support of fans who roar with us in every moment.
+                We focus on tactical intelligence, physical conditioning and
+                mental resilience. Wins matter, but so does how we carry
+                ourselves – respecting officials, opponents and every supporter
+                who stands behind the badge.
               </p>
             </div>
-            <div class="about-stats">
+            <div class="stats-grid">
               <div class="stat">
                 <div class="stat-label">Founded</div>
                 <div class="stat-value">2025</div>
-                <div class="simple-meta">A new generation of Tigers rises.</div>
+                <div class="stat-note">The first roar of a new era.</div>
               </div>
               <div class="stat">
                 <div class="stat-label">Core Values</div>
                 <div class="stat-value">3</div>
-                <div class="simple-meta">Discipline, Courage, Respect.</div>
+                <div class="stat-note">Discipline, Courage, Respect.</div>
               </div>
               <div class="stat">
-                <div class="stat-label">Training</div>
-                <div class="stat-value">6x</div>
-                <div class="simple-meta">High-intensity sessions per week.</div>
+                <div class="stat-label">Sessions / Week</div>
+                <div class="stat-value">6</div>
+                <div class="stat-note">High-intensity training.</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Matchday Squad</div>
+                <div class="stat-value">22</div>
+                <div class="stat-note">A balanced, hungry roster.</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Home Fans</div>
+                <div class="stat-value">10K+</div>
+                <div class="stat-note">Growing each season.</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Academy</div>
+                <div class="stat-value">U10–U18</div>
+                <div class="stat-note">Pathway for future Tigers.</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="section-inner">
+      <section class="section">
+        <div class="container">
           <div class="section-header">
-            <div class="section-title">
-              <span>//</span> What We Stand For
-            </div>
-            <div class="section-subtitle">
-              A club that represents Kerala with pride.
-            </div>
+            <div class="section-kicker"><span>//</span> What We Stand For</div>
+            <h2 class="section-title">The identity of a Kerala Tiger.</h2>
           </div>
-          <div class="card-row">
-            <article class="simple-card">
-              <div class="badge badge-primary">Discipline</div>
-              <h3>Training With Purpose</h3>
+          <div class="card-grid card-grid--three">
+            <article class="card">
+              <span class="card-label card-label--primary">Discipline</span>
+              <h3>Training with intent</h3>
               <p>
-                Athletes follow structured programs focused on physical
-                conditioning, technical drills and mental strength.
+                Every drill has a purpose. Athletes follow structured plans that
+                help build strong habits on and off the pitch.
               </p>
             </article>
-            <article class="simple-card">
-              <div class="badge">Respect</div>
-              <h3>For the Game &amp; Opponents</h3>
+            <article class="card">
+              <span class="card-label">Respect</span>
+              <h3>Game, opponent &amp; self</h3>
               <p>
-                We play hard but fair, respecting every player, referee and fan
-                who shares the field with us.
+                We play hard but fair, honouring the game and everyone involved
+                – from referees to rivals to our own teammates.
               </p>
             </article>
-            <article class="simple-card">
-              <div class="badge">Community</div>
-              <h3>Connected to Our Roots</h3>
+            <article class="card">
+              <span class="card-label">Community</span>
+              <h3>Rooted in Kerala</h3>
               <p>
-                Kerala Tigers runs camps, workshops and outreach programs to
-                inspire young players across the region.
+                Camps, workshops and outreach programs bring the game to
+                schools, neighbourhoods and young dreamers across the state.
               </p>
             </article>
           </div>
@@ -151,8 +159,8 @@
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <span>© <span id="year">2025</span> <strong>Kerala Tigers</strong>. All rights reserved.</span>
+      <div class="container footer-inner">
+        <span>© <span id="year">2025</span> Kerala Tigers. All rights reserved.</span>
         <div class="footer-links">
           <a href="index.html">Home</a>
           <a href="fixtures.html">Fixtures</a>
@@ -162,17 +170,9 @@
     </footer>
   </div>
 
+  <script src="assets/app.js"></script>
   <script>
-    (function () {
-      var el = document.getElementById("year");
-      if (el) el.textContent = new Date().getFullYear();
-    })();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("open");
-  }
-</script>
 </body>
 </html>
