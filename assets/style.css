@@ -306,13 +306,15 @@ header {
 /* Hero meta */
 .hero-meta {
   margin-top: 1.3rem;
-  display: grid;
-  gap: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   font-size: 0.78rem;
-  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  letter-spacing: 0.14em;
+  color: var(--color-text-muted);
 }
+
 
 .hero-meta span strong {
   color: var(--primary);
