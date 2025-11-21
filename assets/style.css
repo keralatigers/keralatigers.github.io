@@ -1,8 +1,8 @@
-/* =======================================
-   Kerala Tigers – Global Styles
-   Fully Mobile-Optimized Upgrade
-   ======================================= */
+/* ======================================================
+   Kerala Tigers — Full Mobile-First Redesign (2025)
+   ====================================================== */
 
+/* COLORS */
 :root {
   --bg-dark: #050910;
   --primary: #FF8C1A;
@@ -10,69 +10,47 @@
   --text-light: #F5E6C8;
   --text-muted: #B9C0D0;
   --surface: #111827;
-  --surface-alt: #1f2937;
-  --border-soft: #374151;
-  --white: #FFFFFF;
+  --white: #ffffff;
+  --border-soft: #2d3648;
 }
 
-/* Reset */
+/* RESET */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
 }
 
 body {
-  background: radial-gradient(circle at top, #111827 0, var(--bg-dark) 45%, #000 100%);
+  background: #050910;
   color: var(--text-light);
-  line-height: 1.6;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Page Layout */
-.page-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
+  overflow-x: hidden;
 }
 
 /* ============================
-   NAVIGATION
+   NAV + MOBILE MENU
    ============================ */
+
 header {
+  width: 100%;
+  background: rgba(5, 9, 16, 0.98);
+  border-bottom: 1px solid #202531;
   position: sticky;
   top: 0;
-  z-index: 100;
-  background: rgba(5, 9, 16, 0.96);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
+  z-index: 200;
 }
 
 .nav {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0.7rem 1rem;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 }
 
+/* LOGO */
 .brand {
   display: flex;
   align-items: center;
@@ -82,209 +60,220 @@ header {
 }
 
 .brand-logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   border: 2px solid var(--primary);
   overflow: hidden;
-  background: #000;
 }
 
 .brand-logo img {
   width: 100%;
-  height: 100%;
 }
 
+/* HAMBURGER */
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+/* NAV LINKS (MOBILE DEFAULT) */
 .nav-links {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 9, 16, 0.98);
+  flex-direction: column;
+  display: none;
+  padding: 1rem 0;
+}
+
+.nav-links.open {
   display: flex;
-  gap: 1.25rem;
-  font-size: 0.95rem;
-  text-transform: uppercase;
 }
 
 .nav-links a {
-  position: relative;
-  padding-bottom: 0.1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
+  border-bottom: 1px solid #1a1f28;
 }
 
-.nav-links a.active {
-  color: var(--white);
-}
-
-.nav-links a.active::after {
-  width: 100%;
-}
-
-.nav-cta {
-  padding: 0.4rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--primary);
-  background: rgba(107, 27, 22, 0.5);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  white-space: nowrap;
+.nav-links a:hover {
+  color: var(--primary);
 }
 
 /* ============================
-   HERO SECTION
+   HERO SECTION (MOBILE-FIRST)
    ============================ */
+
 .hero {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 3rem 1.25rem 2.5rem;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 2rem;
-  align-items: center;
+  padding: 2.5rem 1.2rem;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  line-height: 1.1;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.hero-title-highlight {
+  color: var(--primary);
 }
 
 .hero p {
+  margin: 1rem auto;
+  max-width: 450px;
   font-size: 1rem;
   color: var(--text-muted);
 }
 
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.9rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: black;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  color: var(--text-light);
+}
+
+/* HERO BADGE */
+.hero-tag {
+  margin: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  border: 1px solid #2a3240;
+  background: #111827;
+  margin-bottom: 1rem;
+}
+
+.hero-tag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+/* HERO LOGO CARD */
 .hero-logo-card {
-  background: radial-gradient(circle at top, rgba(255, 140, 26, 0.18), var(--surface));
-  border-radius: 1.4rem;
-  padding: 1.4rem;
-  text-align: center;
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: #111827;
+  border-radius: 1.3rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid #2c3442;
+  margin-top: 2rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-logo-card img {
   width: 100%;
-  max-width: 260px;
-}
-
-/* Buttons */
-.btn-primary,
-.btn-secondary {
-  padding: 0.7rem 1.4rem;
-  border-radius: 999px;
-  text-transform: uppercase;
-  font-size: 0.85rem;
 }
 
 /* ============================
-   CARDS & SECTIONS
+   CARDS + GRID (MOBILE-FIRST)
    ============================ */
 .card-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.1rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .simple-card {
-  background: var(--surface);
-  padding: 1.1rem;
+  background: #111827;
   border-radius: 1rem;
-  border: 1px solid var(--border-soft);
-  font-size: 0.85rem;
+  padding: 1.2rem;
+  border: 1px solid #2a3240;
 }
 
 /* ============================
    FOOTER
    ============================ */
 footer {
-  margin-top: 2rem;
-  padding: 1.4rem 1rem 2rem;
-  border-top: 1px solid var(--border-soft);
-  font-size: 0.8rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
 
-/* =======================================
-   🌟 MOBILE BREAKPOINTS (FULLY UPGRADED)
-   ======================================= */
+/* =============================================================
+   BREAKPOINTS FOR TABLET AND DESKTOP
+   ============================================================= */
 
-/* -------- Tablet Fix (≤900px) -------- */
-@media (max-width: 900px) {
+/* TABLET (≥ 540px) */
+@media (min-width: 540px) {
+  .hero h1 { font-size: 2.5rem; }
+  .hero-actions { flex-direction: row; justify-content: center; }
+}
+
+/* TABLET LANDSCAPE (≥ 768px) */
+@media (min-width: 768px) {
+
+  .hamburger { display: none; }
 
   .nav-links {
-    display: none; /* hides full menu */
-  }
-
-  .hero {
-    grid-template-columns: 1fr; /* stack hero */
-    text-align: center;
-  }
-
-  .hero-logo-card {
-    order: -1; /* show logo above text */
-    margin-bottom: 1.2rem;
-  }
-
-  .card-row {
-    grid-template-columns: 1fr 1fr; /* 2 per row */
-  }
-}
-
-/* -------- Phone Fix (≤600px) -------- */
-@media (max-width: 600px) {
-
-  body {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    width: auto;
     padding: 0;
   }
 
-  .nav {
-    padding: 0.6rem 0.8rem;
+  .nav-links a {
+    border: none;
+    font-size: 0.9rem;
+    padding: 0 0.7rem;
   }
 
   .hero {
-    padding: 2rem 1rem;
+    text-align: left;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
   }
 
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .hero-logo-card img {
-    max-width: 180px;
+  .hero-logo-card {
+    margin: 0;
   }
 
   .card-row {
-    grid-template-columns: 1fr; /* 1 card per row */
-  }
-
-  .simple-card {
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-
-  footer {
-    font-size: 0.75rem;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* -------- Extra Small Devices (≤400px) -------- */
-@media (max-width: 400px) {
-
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    text-align: center;
-  }
-
-  .simple-card {
-    padding: 0.9rem;
-  }
+/* DESKTOP (≥ 1024px) */
+@media (min-width: 1024px) {
+  .hero h1 { font-size: 3.2rem; }
+  .card-row { grid-template-columns: repeat(3, 1fr); }
 }
